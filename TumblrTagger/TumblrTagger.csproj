@@ -33,6 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DontPanic.TumblrSharp, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\TumblrSharp.1.0.0.6\lib\net45\DontPanic.TumblrSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DontPanic.TumblrSharp.Client, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\TumblrSharp.1.0.0.6\lib\net45\DontPanic.TumblrSharp.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DontPanic.TumblrSharp.Net45, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\TumblrSharp.1.0.0.6\lib\net45\DontPanic.TumblrSharp.Net45.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,11 +59,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Credentials.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
